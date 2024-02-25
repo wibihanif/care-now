@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./Providers";
-import test from "../public/images/care-now.jpeg";
 import { CareNowShell } from "./components/CareNowShell";
 
 const inter = Inter({ subsets: ["latin"] });
