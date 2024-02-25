@@ -39,6 +39,7 @@ export const RegisterPatientForm: React.FC = () => {
                 </FormLabel>
                 <Input
                   type="text"
+                  placeholder="Example: 123"
                   _focus={{
                     borderColor: "brand.200",
                     boxShadow: "none",
@@ -51,6 +52,7 @@ export const RegisterPatientForm: React.FC = () => {
                 </FormLabel>
                 <Input
                   type="text"
+                  placeholder="Example: John Doe"
                   _focus={{
                     borderColor: "brand.200",
                     boxShadow: "none",
@@ -63,6 +65,7 @@ export const RegisterPatientForm: React.FC = () => {
                 </FormLabel>
                 <Input
                   type="text"
+                  placeholder="Example: 2024-01-01"
                   _focus={{
                     borderColor: "brand.200",
                     boxShadow: "none",
@@ -75,6 +78,7 @@ export const RegisterPatientForm: React.FC = () => {
                 </FormLabel>
                 <Input
                   type="text"
+                  placeholder="Example: 20000000"
                   _focus={{
                     borderColor: "brand.200",
                     boxShadow: "none",
@@ -103,7 +107,7 @@ export const RegisterPatientForm: React.FC = () => {
                   TREATMENT DESCRIPTION
                 </FormLabel>
                 <Select
-                  colorScheme="purple"
+                  placeholder="Please Select Treatment Description"
                   options={[
                     {
                       label: "I am red",
@@ -122,7 +126,7 @@ export const RegisterPatientForm: React.FC = () => {
                   MEDICATION PRESCRIBED
                 </FormLabel>
                 <Select
-                  colorScheme="purple"
+                  placeholder="Please Select Medication Prescribed"
                   options={[
                     {
                       label: "I am red",
