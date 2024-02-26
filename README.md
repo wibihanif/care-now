@@ -11,6 +11,10 @@ $ npm install
 First, run the development server:
 
 ```bash
+Dont forget to start the server first, you can run the care-now-api repository
+```
+
+```bash
 npm run dev
 # or
 yarn dev
@@ -34,3 +38,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## See Demo
+
+https://drive.google.com/file/d/1b8_E6ZOJC9p-fDXR9uaN4zmK9bDLTNag/view?usp=sharing
