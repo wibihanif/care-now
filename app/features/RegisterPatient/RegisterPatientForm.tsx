@@ -15,7 +15,7 @@ export const RegisterPatientForm: React.FC = () => {
 
   const onSubmit = async (
     values: RegisterPatientFormInput,
-    { resetForm, setFieldValue }: FormikHelpers<RegisterPatientFormInput>
+    { resetForm }: FormikHelpers<RegisterPatientFormInput>
   ) => {
     const {
       costOfTreatment,
@@ -43,8 +43,8 @@ export const RegisterPatientForm: React.FC = () => {
       resetForm();
 
       toast({
-        title: "Account created.",
-        description: "We've created your account for you.",
+        title: "Patient Registered.",
+        description: "Register Patient Success.",
         status: "success",
         duration: 9000,
         isClosable: true,
@@ -52,7 +52,7 @@ export const RegisterPatientForm: React.FC = () => {
     } catch (error) {
       toast({
         title: "Error Register Patient",
-        description: "We've created your account for you.",
+        description: "An error has occured.",
         status: "error",
         duration: 9000,
         isClosable: true,
