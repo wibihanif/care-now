@@ -2,11 +2,7 @@
 
 import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
-import {
-  DefaultOptions,
-  QueryClient,
-  QueryClientProvider,
-} from "@tanstack/react-query";
+import { DefaultOptions, QueryClient, QueryClientProvider } from "react-query";
 
 const queryConfig: DefaultOptions = {
   queries: {

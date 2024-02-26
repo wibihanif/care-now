@@ -14,7 +14,13 @@ import { useFormikContext } from "formik";
 import { RegisterPatientFormInput } from "./types";
 import { MouseEventHandler } from "react";
 
-export const RegisterPatientFormInner: React.FC = () => {
+interface RegisterPatientFormInnerProps {
+  isLoadingRegisterPatient: boolean;
+}
+
+export const RegisterPatientFormInner: React.FC<
+  RegisterPatientFormInnerProps
+> = ({ isLoadingRegisterPatient }) => {
   const { errors, handleSubmit, getFieldProps, values, setFieldValue } =
     useFormikContext<RegisterPatientFormInput>();
 
@@ -127,6 +133,7 @@ export const RegisterPatientFormInner: React.FC = () => {
                   TREATMENT DESCRIPTION
                 </FormLabel>
                 <Select
+                  value={values.treatmentDescription}
                   id="treatmentDescription"
                   isClearable
                   isMulti
@@ -147,6 +154,7 @@ export const RegisterPatientFormInner: React.FC = () => {
                   MEDICATION PRESCRIBED
                 </FormLabel>
                 <Select
+                  value={values.medicationPrescribed}
                   id="medicationPrescribed"
                   isClearable
                   isMulti
@@ -168,13 +176,14 @@ export const RegisterPatientFormInner: React.FC = () => {
       </Box>
       <Center mt={10} pb={20}>
         <Button
+          isLoading={isLoadingRegisterPatient}
           bgColor="brand.200"
           color="white"
           _hover={{ bgColor: "none" }}
           fontSize="small"
-          onClick={
-            handleSubmit as unknown as MouseEventHandler<HTMLSpanElement>
-          }
+          onClick={() => {
+            handleSubmit() as unknown as MouseEventHandler<HTMLSpanElement>;
+          }}
         >
           Register
         </Button>

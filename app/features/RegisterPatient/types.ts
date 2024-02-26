@@ -8,6 +8,6 @@ export interface RegisterPatientFormInput {
   patientName: string;
   dateOfTreatment: string;
   costOfTreatment: string;
-  treatmentDescription: any;
-  medicationPrescribed: any;
+  treatmentDescription: ConstantItem[];
+  medicationPrescribed: ConstantItem[];
 }
